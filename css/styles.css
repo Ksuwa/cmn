@@ -1,0 +1,264 @@
+/* line 3, C:/Users/User/GitHub/cmn/css/styles.scss */
+h1, h2, h3, h4, h5 {
+  font-family: "Josefin Slab", "Helvetica Neue", Helvetica, sans-serif; }
+
+/* line 7, C:/Users/User/GitHub/cmn/css/styles.scss */
+h1 {
+  border-bottom: 1px solid rgba(167, 2, 0, 0.9);
+  border-top: 1px solid rgba(167, 2, 0, 0.9);
+  font-size: 38px;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0 7px; }
+
+/* line 18, C:/Users/User/GitHub/cmn/css/styles.scss */
+h2 {
+  font-size: 32px; }
+
+/* line 22, C:/Users/User/GitHub/cmn/css/styles.scss */
+h3 {
+  font-size: 26px; }
+
+/* line 26, C:/Users/User/GitHub/cmn/css/styles.scss */
+a, a:hover {
+  text-decoration: none; }
+
+/* line 30, C:/Users/User/GitHub/cmn/css/styles.scss */
+html {
+  height: 100%; }
+
+/* line 34, C:/Users/User/GitHub/cmn/css/styles.scss */
+body {
+  display: flex;
+  flex-direction: column; }
+
+/* line 39, C:/Users/User/GitHub/cmn/css/styles.scss */
+.page-wrapper {
+  background: url(../img/bg-1.jpg) no-repeat center center fixed;
+  background-color: #DCDCDC;
+  background-size: cover;
+  color: black;
+  font: 20px "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  min-height: 100%;
+  line-height: 1.6; }
+
+/* line 49, C:/Users/User/GitHub/cmn/css/styles.scss */
+.header, .header .contacts-link {
+  color: black;
+  letter-spacing: 3px;
+  max-width: 680px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+  /* line 58, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .header-top {
+    clear: both;
+    margin: 30px auto 0;
+    max-width: 270px;
+    overflow: hidden; }
+  /* line 65, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .header-text {
+    border-bottom: 1px solid #fff;
+    font-size: 30px; }
+  /* line 70, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .header-logo {
+    float: left;
+    width: 200px; }
+    /* line 74, C:/Users/User/GitHub/cmn/css/styles.scss */
+    .header-logo-name {
+      float: left;
+      font: 700 70px "Josefin Slab", "Helvetica Neue", Helvetica, sans-serif; }
+  /* line 80, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .header .contacts {
+    padding: 10px 28px 0;
+    margin-bottom: 15px; }
+    /* line 84, C:/Users/User/GitHub/cmn/css/styles.scss */
+    .header .contacts ul {
+      overflow: hidden; }
+    /* line 88, C:/Users/User/GitHub/cmn/css/styles.scss */
+    .header .contacts-list {
+      float: left;
+      font-size: 20px -1;
+      padding: 0 20px; }
+    /* line 94, C:/Users/User/GitHub/cmn/css/styles.scss */
+    .header .contacts-link {
+      color: rgba(249, 244, 56, 0.8); }
+    /* line 99, C:/Users/User/GitHub/cmn/css/styles.scss */
+    .header .contacts-link:hover {
+      color: #f9f438; }
+
+/* line 105, C:/Users/User/GitHub/cmn/css/styles.scss */
+.nav-custom {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-bottom: 1px solid rgba(167, 2, 0, 0.9);
+  margin-bottom: 150px;
+  min-height: 70px; }
+  /* line 112, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .nav-custom li {
+    padding-top: 30px; }
+  /* line 117, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .nav-custom li a.nav-custom-link {
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition-duration: 0.4s; }
+  /* line 124, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .nav-custom li a.nav-custom-link:hover {
+    color: #fff;
+    background-color: rgba(167, 2, 0, 0.9); }
+  /* line 129, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .nav-custom .brand-custom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    float: none;
+    font-size: 24px;
+    font-weight: 600; }
+  /* line 136, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .nav-custom .brand-custom:before {
+    content: "";
+    background: url(../img/logo-pst-head.png) no-repeat;
+    display: block;
+    float: left;
+    height: 38px;
+    margin: -9px 10px 0 0;
+    width: 43px; }
+
+/* line 147, C:/Users/User/GitHub/cmn/css/styles.scss */
+.navbar-header {
+  height: 83px; }
+
+/* line 151, C:/Users/User/GitHub/cmn/css/styles.scss */
+.btn-nav-custom {
+  margin-top: 27px; }
+
+/* line 155, C:/Users/User/GitHub/cmn/css/styles.scss */
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+/* line 159, C:/Users/User/GitHub/cmn/css/styles.scss */
+ul.dropdown-submenu li a {
+  padding: 10px 10px 0; }
+
+/* line 163, C:/Users/User/GitHub/cmn/css/styles.scss */
+ul.dropdown-submenu li {
+  padding: 0; }
+
+/* line 167, C:/Users/User/GitHub/cmn/css/styles.scss */
+ul.dropdown-submenu li:hover {
+  background-color: rgba(167, 2, 0, 0.9); }
+
+/* line 171, C:/Users/User/GitHub/cmn/css/styles.scss */
+.dropdown-submenu {
+  margin: 0;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+/* line 178, C:/Users/User/GitHub/cmn/css/styles.scss */
+.content {
+  flex: 1 0 auto;
+  margin: 30px 0 0;
+  text-align: justify; }
+  /* line 183, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .content p {
+    text-indent: 40px; }
+
+/* line 188, C:/Users/User/GitHub/cmn/css/styles.scss */
+.slider {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  padding: 40px 50px; }
+  /* line 193, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .slider-img {
+    margin: 0 auto; }
+  /* line 197, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .slider-list {
+    margin-left: 20px; }
+
+/* line 202, C:/Users/User/GitHub/cmn/css/styles.scss */
+.item img {
+  margin: 0 auto; }
+
+/* line 206, C:/Users/User/GitHub/cmn/css/styles.scss */
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+/* line 211, C:/Users/User/GitHub/cmn/css/styles.scss */
+.footer-wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0 10px;
+  clear: both;
+  overflow: hidden; }
+
+/* line 218, C:/Users/User/GitHub/cmn/css/styles.scss */
+.footer-section {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 5px 5px; }
+
+/* line 223, C:/Users/User/GitHub/cmn/css/styles.scss */
+.footer-copyright {
+  font-size: 17px;
+  padding-top: 10px 0; }
+
+/* line 228, C:/Users/User/GitHub/cmn/css/styles.scss */
+.footer-contacts {
+  float: right; }
+  /* line 232, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .footer-contacts .contacts-info {
+    display: block; }
+  /* line 236, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .footer-contacts .contacts-link-f {
+    color: rgba(255, 255, 255, 0.7); }
+    /* line 239, C:/Users/User/GitHub/cmn/css/styles.scss */
+    .footer-contacts .contacts-link-f:hover {
+      color: #fff; }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  /* line 255, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .nav-custom-link {
+    font-size: 15px; }
+  /* line 261, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .footer-contacts {
+    float: none;
+    text-align: center; }
+  /* line 266, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .footer-copyright {
+    padding: 0; }
+  /* line 270, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .footer-item-logo {
+    margin: 0 auto; } }
+
+@media screen and (max-width: 768px) {
+  /* line 278, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .nav-custom-list li {
+    font-size: 14px;
+    margin: 0;
+    padding: 0; }
+  /* line 284, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .nav-custom-contacts {
+    float: none;
+    text-align: center; }
+  /* line 290, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .slider {
+    padding: 20px; }
+  /* line 296, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .footer-contacts {
+    float: none;
+    text-align: center; }
+    /* line 300, C:/Users/User/GitHub/cmn/css/styles.scss */
+    .footer-contacts a.contacts-link-f {
+      font-size: 16px; }
+  /* line 305, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .footer-item-logo {
+    margin: 0 auto; }
+  /* line 309, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .footer-section {
+    padding: 0; }
+  /* line 313, C:/Users/User/GitHub/cmn/css/styles.scss */
+  .footer-copyright {
+    font-size: 16px;
+    padding: 10px 0 0; } }
+
+/*# sourceMappingURL=styles.css.map */
