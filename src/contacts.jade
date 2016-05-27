@@ -1,0 +1,40 @@
+extend _template.jade
+
+block title 
+	title Контакты
+block content
+	h1 Контакты
+	ul.list-unstyled.contacts-page-list
+		li
+			i.fa.fa-map-marker
+				|      ДЦ «Елизаровский», Елизарова, 38А
+		li
+			i.fa.fa-envelope
+					|     info@vipgift.su
+	hr
+	form.form-horizontal.contacts-page-form#myForm(role='form', action='#')
+		.row
+			.form-group.contacts-page-form
+				label.control-label.col-sm-2 Ваше имя:
+				.col-sm-10
+					input.form-control.contacts-page-input(type='text', placeholder='Введите имя')
+			.form-group
+				label.control-label.col-sm-2 Телефон:
+					span.eror-sign   *
+				.col-sm-10
+					input.form-control.contacts-page-input.need-valid#phone(type='tel', name='phone', placeholder='+7(___) ___-____')
+			.form-group
+				label.control-label.col-sm-2 Почта:
+					span.eror-sign   *
+				.col-sm-10
+					input.form-control.contacts-page-input.mail.need-valid(type='email', name='email', placeholder='Введите e-mail')
+			.form-group
+				label.control-label.col-sm-2 Ваш вопрос:
+				.col-sm-10
+					textarea.form-control(rows='6')
+					input(type='hidden', name='save', value='contact')
+				button.btn.btn-default.contacts-page-btn(type='submit') Отправить
+block append script 
+	script(src='js/valid.min.js')
+	script(src='js/maskedinput.min.js')
+	script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js')

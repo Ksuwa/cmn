@@ -1,40 +1,105 @@
-/* line 3, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 3, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Josefin Slab", "Helvetica Neue", Helvetica, sans-serif; }
 
-/* line 7, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 7, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 h1 {
   border-bottom: 1px solid rgba(167, 2, 0, 0.9);
   border-top: 1px solid rgba(167, 2, 0, 0.9);
-  font-size: 38px;
+  font-size: 48px;
   letter-spacing: 2px;
   margin-bottom: 40px;
   text-align: center;
-  text-transform: uppercase;
   padding: 15px 0 7px; }
 
-/* line 18, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 17, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 h2 {
-  font-size: 32px; }
+  font-size: 32px;
+  border-bottom: 1px solid black;
+  max-width: 350px;
+  margin: 40px auto 20px;
+  text-align: center; }
 
-/* line 22, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 25, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 h3 {
-  font-size: 26px; }
+  font-size: 26px;
+  margin-top: 40px; }
 
-/* line 26, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 30, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 a, a:hover {
   text-decoration: none; }
 
-/* line 30, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 34, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+ul {
+  margin-left: 30px; }
+
+/* line 39, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 html {
   height: 100%; }
 
-/* line 34, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 43, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 body {
   display: flex;
   flex-direction: column; }
 
-/* line 39, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 48, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+.font-bold {
+  font-weight: bold; }
+
+/* line 52, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+h2.h2-pay-page {
+  border: none;
+  max-width: 100%;
+  text-align: left; }
+
+/* line 58, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+.h2-pay-page:before {
+  content: "";
+  display: block;
+  float: left;
+  height: 32px;
+  margin-right: 15px;
+  width: 32px; }
+
+/* line 67, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+.content-list {
+  padding-bottom: 20px; }
+
+/* line 71, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+.nal:before {
+  background: url("../img/nal.png") no-repeat; }
+
+/* line 75, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+.commerce:before {
+  background: url("../img/commerce.png") no-repeat; }
+
+/* line 79, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+.money:before {
+  background: url("../img/money.png") no-repeat; }
+
+/* line 85, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+.contacts-page-btn {
+  float: right;
+  margin: 20px 15px 0 0; }
+
+/* line 90, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+.contacts-page-input {
+  max-width: 500px; }
+
+/* line 94, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+.contacts-page-list {
+  clear: both;
+  overflow: hidden; }
+  /* line 98, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+  .contacts-page-list li {
+    float: left;
+    padding-right: 30px; }
+
+/* line 106, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
+.eror-sign {
+  color: red; }
+
+/* line 110, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .page-wrapper {
   background: url(../img/bg-1.jpg) no-repeat center center fixed;
   background-color: #DCDCDC;
@@ -44,7 +109,7 @@ body {
   min-height: 100%;
   line-height: 1.6; }
 
-/* line 49, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 120, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .header, .header .contacts-link {
   color: black;
   letter-spacing: 3px;
@@ -53,70 +118,66 @@ body {
   padding-bottom: 10px;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
-  /* line 58, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 129, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .header-top {
     clear: both;
     margin: 30px auto 0;
     max-width: 270px;
     overflow: hidden; }
-  /* line 65, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 136, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .header-text {
     border-bottom: 1px solid #fff;
     font-size: 30px; }
-  /* line 70, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 141, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .header-logo {
     float: left;
     width: 200px; }
-    /* line 74, C:/Users/user/GIT/cmn/css/styles.scss */
-    .header-logo-name {
-      float: left;
-      font: 700 70px "Josefin Slab", "Helvetica Neue", Helvetica, sans-serif; }
-  /* line 80, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 147, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .header .contacts {
     padding: 10px 28px 0;
     margin-bottom: 15px; }
-    /* line 84, C:/Users/user/GIT/cmn/css/styles.scss */
+    /* line 151, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
     .header .contacts ul {
       overflow: hidden; }
-    /* line 88, C:/Users/user/GIT/cmn/css/styles.scss */
+    /* line 155, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
     .header .contacts-list {
       float: left;
       font-size: 20px -1;
       padding: 0 20px; }
-    /* line 94, C:/Users/user/GIT/cmn/css/styles.scss */
+    /* line 161, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
     .header .contacts-link {
       color: rgba(249, 244, 56, 0.8); }
-    /* line 99, C:/Users/user/GIT/cmn/css/styles.scss */
+    /* line 166, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
     .header .contacts-link:hover {
       color: #f9f438; }
 
-/* line 105, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 172, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .nav-custom {
   background-color: rgba(0, 0, 0, 0.6);
   border: none;
   border-bottom: 1px solid rgba(167, 2, 0, 0.9);
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   min-height: 70px; }
-  /* line 112, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 179, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .nav-custom li {
-    padding-top: 30px; }
-  /* line 117, C:/Users/user/GIT/cmn/css/styles.scss */
+    padding-top: 30px;
+    padding-bottom: 0; }
+  /* line 185, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .nav-custom li a.nav-custom-link {
     color: rgba(255, 255, 255, 0.7);
     letter-spacing: 2px;
-    text-transform: uppercase;
     transition-duration: 0.4s; }
-  /* line 124, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 191, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .nav-custom li a.nav-custom-link:hover, .nav-custom ul.dropdown-submenu li a:hover {
     color: #fff;
     background-color: rgba(167, 2, 0, 0.9); }
-  /* line 129, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 196, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .nav-custom .brand-custom {
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     float: none;
     font-size: 24px;
     font-weight: 600; }
-  /* line 136, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 203, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .nav-custom .brand-custom:before {
     content: "";
     background: url(../img/logo-pst-head.png) no-repeat;
@@ -126,139 +187,139 @@ body {
     margin: -9px 10px 0 0;
     width: 43px; }
 
-/* line 147, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 214, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .navbar-header {
   height: 83px; }
 
-/* line 151, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 218, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .btn-nav-custom {
   margin-top: 27px; }
 
-/* line 155, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 222, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .dropdown:hover .dropdown-menu {
   display: block; }
 
-/* line 159, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 226, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 ul.dropdown-submenu li a {
   padding: 10px 10px 5px;
   color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase; }
+  letter-spacing: 2px; }
 
-/* line 165, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 232, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 ul.dropdown-submenu li {
   padding: 0; }
 
-/* line 169, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 236, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 ul.dropdown-submenu li:hover {
   background-color: rgba(167, 2, 0, 0.9); }
 
-/* line 173, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 240, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .dropdown-submenu {
   margin: 0;
-  width: 200px;
+  width: 225px;
   background-color: rgba(0, 0, 0, 0.6); }
 
-/* line 180, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 247, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .content {
   flex: 1 0 auto;
   margin: 30px 0 0;
   text-align: justify; }
-  /* line 185, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 252, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .content p {
     text-indent: 40px; }
 
-/* line 190, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 257, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .slider {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 50px;
   padding: 40px 50px; }
-  /* line 195, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 262, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .slider-img {
     margin: 0 auto; }
-  /* line 199, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 266, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .slider-list {
     margin-left: 20px; }
 
-/* line 204, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 271, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .item img {
   margin: 0 auto; }
 
-/* line 208, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 275, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .carousel-control.left, .carousel-control.right {
   background-image: none; }
 
-/* line 213, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 280, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .footer-wrapper {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 10px 0 10px;
   clear: both;
   overflow: hidden; }
 
-/* line 220, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 287, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .footer-section {
   color: rgba(255, 255, 255, 0.7);
   padding: 0 5px 5px; }
 
-/* line 225, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 292, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .footer-copyright {
   font-size: 17px;
   padding-top: 10px 0; }
 
-/* line 230, C:/Users/user/GIT/cmn/css/styles.scss */
+/* line 297, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
 .footer-contacts {
   float: right; }
-  /* line 234, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 301, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .footer-contacts .contacts-info {
     display: block; }
-  /* line 238, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 305, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .footer-contacts .contacts-link-f {
     color: rgba(255, 255, 255, 0.7); }
-    /* line 241, C:/Users/user/GIT/cmn/css/styles.scss */
+    /* line 308, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
     .footer-contacts .contacts-link-f:hover {
       color: #fff; }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
-  /* line 257, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 320, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .nav-custom-link {
     font-size: 15px; }
-  /* line 263, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 326, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .footer-contacts {
     float: none;
     text-align: center; }
-  /* line 268, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 331, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .footer-copyright {
     padding: 0; }
-  /* line 272, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 335, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .footer-item-logo {
     margin: 0 auto; } }
 
 @media screen and (max-width: 768px) {
-  /* line 280, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 343, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .nav-custom-list li {
     font-size: 14px;
     margin: 0;
     padding: 0; }
-  /* line 286, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 349, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .nav-custom-contacts {
     float: none;
     text-align: center; }
-  /* line 292, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 355, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .slider {
     padding: 20px; }
-  /* line 298, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 361, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .footer-contacts {
     float: none;
     text-align: center; }
-    /* line 302, C:/Users/user/GIT/cmn/css/styles.scss */
+    /* line 365, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
     .footer-contacts a.contacts-link-f {
       font-size: 16px; }
-  /* line 307, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 370, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .footer-item-logo {
     margin: 0 auto; }
-  /* line 311, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 374, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .footer-section {
     padding: 0; }
-  /* line 315, C:/Users/user/GIT/cmn/css/styles.scss */
+  /* line 378, C:/Users/User/GitHub/cmn/src/scss/styles.scss */
   .footer-copyright {
     font-size: 16px;
     padding: 10px 0 0; } }

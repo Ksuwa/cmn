@@ -7,24 +7,33 @@ h1, h2, h3, h4, h5 {
 h1 {
 	border-bottom: $c-border-h1;
 	border-top: $c-border-h1;
-	font-size: $font-size-base + 18;
+	font-size: $font-size-base + 28;
 	letter-spacing: $leter-spacing;
 	margin-bottom: 40px;
 	text-align: center;
-	text-transform: uppercase;
 	padding: 15px 0 7px;
 }
 
 h2 {
 	font-size: $font-size-base + 12;
+	border-bottom: 1px solid black;
+	max-width: 350px;
+	margin: 40px auto 20px;
+	text-align: center;
 }
 
 h3 {
 	font-size: $font-size-base + 6;
+	margin-top: 40px;
 }
 
 a, a:hover {
 	text-decoration: none;
+}
+
+ul {
+	margin-left: 30px;
+
 }
 
 html {
@@ -35,6 +44,68 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
+.font-bold {
+	font-weight: bold;
+}
+
+h2.h2-pay-page {
+	border: none;
+	max-width: 100%;
+	text-align: left;
+}
+
+.h2-pay-page:before {
+	content: "";
+	display: block;
+	float: left;
+	height: 32px;
+	margin-right: 15px;
+	width: 32px;
+}
+
+.content-list {
+	padding-bottom: 20px;
+}
+
+.nal:before {
+	background: url('../img/nal.png') no-repeat;
+}
+
+.commerce:before {
+	background: url('../img/commerce.png') no-repeat;
+}
+	
+.money:before {
+	background: url('../img/money.png') no-repeat;
+}
+
+.contacts-page {
+	
+	&-btn {
+		float: right;
+		margin: 20px 15px 0 0;
+	}
+	
+	&-input {
+		max-width: 500px;
+	}
+	
+	&-list {
+		clear: both;
+		overflow: hidden;
+		
+		li {
+			float: left;
+			padding-right: 30px;
+		
+		}
+	}
+}
+
+.eror-sign {
+			color: red;
+		}
 
 .page-wrapper {
 	background: url(../img/bg-1.jpg) no-repeat center center fixed;
@@ -71,10 +142,6 @@ body {
 		float: left;
 		width: 200px;
 
-	&-name {
-		float: left;
-		font: 700 $font-size-base + 50 $font-caption;
-		}
 	}
 	
 	.contacts {
@@ -106,18 +173,18 @@ body {
 	background-color: $bg-navbar;
 	border: none;
 	border-bottom: 1px solid $c-red;
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 	min-height: 70px;
 
 	li {
 		padding-top: 30px;
+		padding-bottom: 0;
 	}
 	
 	
 	li a.nav-custom-link {
 		color: $c-link-nav;
 		letter-spacing: $leter-spacing;
-		text-transform: uppercase;
 		transition-duration: 0.4s;
 		}
 	
@@ -159,7 +226,7 @@ body {
 ul.dropdown-submenu li a {
 	padding: 10px 10px 5px;
 	color: $c-link-nav;
-	text-transform: uppercase;
+	letter-spacing: $leter-spacing;
 }
 
 ul.dropdown-submenu li {
@@ -172,7 +239,7 @@ ul.dropdown-submenu li:hover{
 
 .dropdown-submenu {
 	margin: 0;
-	width: 200px;
+	width: 225px;
 	background-color: $bg-navbar;
 }
 
@@ -246,10 +313,6 @@ ul.dropdown-submenu li:hover{
 	}
 }
 
-
-@media screen and (min-width: 1200px){
-
-}
 
 @media screen and (max-width: 992px) and (min-width: 768px){
 	.nav-custom {

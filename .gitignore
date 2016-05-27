@@ -16,7 +16,7 @@ $RECYCLE.BIN/
 *.sass-cache
 *.map
 *.css.map
-
+*.css
 
 node_modules
 dist

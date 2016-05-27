@@ -3,63 +3,64 @@ html
 	head
 		meta(charset='UTF-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
-		title Услуги
-		link(rel='icon', type='image/x-icon', href='img/favicon.ico')
-		link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel='stylesheet')
-		link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
-		link(href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic', rel='stylesheet', type='text/css')
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
-		link(rel='stylesheet', href='css/styles.css')
+		block title
+		block headLinks
+			link(rel='icon', type='image/x-icon', href='img/favicon.ico')
+			link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel='stylesheet')
+			link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
+			link(href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic', rel='stylesheet', type='text/css')
+		block headStyles
+			link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+			link(rel='stylesheet', href='css/styles.min.css')
 	body.page-wrapper
 		nav.navbar.navbar-default.nav-custom
-		  .container
-			a.navbar-brand(href='/', title='Главная')
-			  img.img-responsive.header-logo(src='img/logo.png', alt='Логотип')
-			.navbar-header
-			  button.navbar-toggle.btn-nav-custom(type='button', data-toggle='collapse', data-target='#nav-header-collapse')
-				span.sr-only Toggle navigation
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
-			#nav-header-collapse.navbar-collapse.collapse
-			  ul.nav-custom-list.nav.navbar-nav.navbar-right
-				li#dropdown-services.dropdown
-				  a.dropdown-toggle.nav-custom-link(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-					| Главная 
-					span.caret.hidden-xs
-				  ul#submenu-services.dropdown-menu.hidden-xs.dropdown-submenu
-					li
-					  a(href='#') Подарки мужчинам
-					li
-					  a(href='#') Подарки женщинам
-					li
-					  a(href='#') Бизнес подарки
-					li
-					  a(href='#') Подарки руководителю
-				li
-				  a.nav-custom-link(href='catalog.html') Доставка
-				li
-				  a.nav-custom-link(href='services.html') Оплата
-				li
-				  a.nav-custom-link(href='contacts.html') Контакты
+			.container
+				a.navbar-brand(href='main.html', title='Главная')
+					img.img-responsive.header-logo(src='img/logo.png', alt='Логотип')
+				.navbar-header
+					button.navbar-toggle.btn-nav-custom(type='button', data-toggle='collapse', data-target='#nav-header-collapse')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+				#nav-header-collapse.navbar-collapse.collapse
+					ul.nav-custom-list.nav.navbar-nav.navbar-right
+						li#dropdown-services.dropdown
+							a.dropdown-toggle.nav-custom-link(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+								| Главная 
+								span.caret.hidden-xs
+							ul#submenu-services.dropdown-menu.hidden-xs.dropdown-submenu
+								li
+									a(href='gift-for-men.html') Подарки мужчинам
+								li
+									a(href='gift-for-women.html') Подарки женщинам
+								li
+									a(href='buisness-gift.html') Бизнес подарки
+								li
+									a(href='gift-for-boss.html') Подарки руководителю
+						li
+							a.nav-custom-link(href='delivery.html') Доставка
+						li
+							a.nav-custom-link(href='pay.html') Оплата
+						li
+							a.nav-custom-link(href='contacts.html') Контакты
 		section.content
-		  .container
-			.slider
-			  h1 Наши услуги
-			  p
-				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+			.container
+				.slider
+					block content
 		footer.footer-wrapper
-		  .container
-			.row
-			  .footer-section
-				.col-md-3.col-xs-12
-				.col-md-6.col-xs-12
-				  .footer-copyright.text-center Copyright © 2016 "CMN" (Санкт-Петербург)
-				.col-md-3.col-xs-12
-				  .footer-contacts
-					span.contacts-info
-					  a.contacts-link-f(href='malito: info@vipgift.su')
-						i.fa.fa-envelope
-						|   info@vipgift.su
-	script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
-	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+			.container
+				.row
+					.footer-section
+						.col-md-3.col-xs-12
+						.col-md-6.col-xs-12
+							.footer-copyright.text-center Copyright © 2016 "CMN" (Санкт-Петербург)
+						.col-md-3.col-xs-12
+							.footer-contacts
+								span.contacts-info
+									a.contacts-link-f(href='malito: info@vipgift.su')
+										i.fa.fa-envelope
+										|   info@vipgift.su
+		block script
+			script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+			script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
