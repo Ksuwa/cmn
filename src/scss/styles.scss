@@ -55,58 +55,6 @@ h2.h2-pay-page {
 	text-align: left;
 }
 
-.h2-pay-page:before {
-	content: "";
-	display: block;
-	float: left;
-	height: 32px;
-	margin-right: 15px;
-	width: 32px;
-}
-
-.content-list {
-	padding-bottom: 20px;
-}
-
-.nal:before {
-	background: url('../img/nal.png') no-repeat;
-}
-
-.commerce:before {
-	background: url('../img/commerce.png') no-repeat;
-}
-	
-.money:before {
-	background: url('../img/money.png') no-repeat;
-}
-
-.contacts-page {
-	
-	&-btn {
-		float: right;
-		margin: 20px 15px 0 0;
-	}
-	
-	&-input {
-		max-width: 500px;
-	}
-	
-	&-list {
-		clear: both;
-		overflow: hidden;
-		
-		li {
-			float: left;
-			padding-right: 30px;
-		
-		}
-	}
-}
-
-.eror-sign {
-			color: red;
-		}
-
 .page-wrapper {
 	background: url(../img/bg-1.jpg) no-repeat center center fixed;
 	background-color: #DCDCDC;
@@ -114,7 +62,7 @@ h2.h2-pay-page {
 	color: $c-white;
 	font: $font-size-base $font-base;
 	min-height: 100%;
-	line-height: 1.6;
+	line-height: 1.4;
 }
 
 .header {
@@ -125,47 +73,11 @@ h2.h2-pay-page {
 	padding-bottom: 10px;
 	text-align: center;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-	
-	&-top {
-		clear: both;
-		margin: 30px auto 0;
-		max-width: 270px;
-		overflow: hidden;
-	}
-	
-	&-text {
-		border-bottom: 1px solid #fff;
-		font-size: $font-size-base + 10;
-	}
 
 	&-logo {
 		float: left;
 		width: 200px;
 
-	}
-	
-	.contacts {
-		padding: 10px 28px 0;
-		margin-bottom: 15px;
-		
-		ul {
-			overflow: hidden;
-		}
-		
-		&-list {
-			float: left;
-			font-size: $font-size-base -1;
-			padding: 0 20px;
-		}
-		
-		&-link {
-			@extend .header;
-			color: $c-link;
-		}
-		
-		&-link:hover {
-			color: $c-link-hover;
-		}
 	}
 }
 
@@ -243,6 +155,15 @@ ul.dropdown-submenu li:hover{
 	background-color: $bg-navbar;
 }
 
+.img-left {
+	float: left;
+	margin: 10px 20px 10px 0;
+}
+
+.img-right {
+	float: right;
+	margin: 10px 0 10px 20px;
+}
 
 .content {
 	flex: 1 0 auto;
@@ -266,14 +187,6 @@ ul.dropdown-submenu li:hover{
 	&-list {
 		margin-left: 20px;
 	}
-}
-
-.item img {
-	margin: 0 auto;
-}
-
-.carousel-control.left, .carousel-control.right {
-	background-image: none;
 }
 
 .footer {
@@ -312,6 +225,59 @@ ul.dropdown-submenu li:hover{
 		}
 	}
 }
+
+.h2-pay-page:before {
+	content: "";
+	display: block;
+	float: left;
+	height: 32px;
+	margin-right: 15px;
+	width: 32px;
+}
+
+.content-list {
+	padding-bottom: 20px;
+}
+
+.nal:before {
+	background: url('../img/nal.png') no-repeat;
+}
+
+.commerce:before {
+	background: url('../img/commerce.png') no-repeat;
+}
+	
+.money:before {
+	background: url('../img/money.png') no-repeat;
+}
+
+.contacts-page {
+	
+	&-btn {
+		float: right;
+		margin: 20px 15px 0 0;
+	}
+	
+	&-input {
+		max-width: 500px;
+	}
+	
+	&-list {
+		clear: both;
+		overflow: hidden;
+		
+		li {
+			float: left;
+			padding-right: 30px;
+		
+		}
+	}
+}
+
+.eror-sign {
+			color: red;
+		}
+
 
 
 @media screen and (max-width: 992px) and (min-width: 768px){
