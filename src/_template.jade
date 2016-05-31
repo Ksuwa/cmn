@@ -27,7 +27,7 @@ html
 					ul.nav-custom-list.nav.navbar-nav.navbar-right
 						li#dropdown-services.dropdown
 							a.dropdown-toggle.nav-custom-link(href='/', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-								| Главная 
+								| Подарки 
 								span.caret.hidden-xs
 							ul#submenu-services.dropdown-menu.hidden-xs.dropdown-submenu
 								li
@@ -39,11 +39,11 @@ html
 								li
 									a(href='gift-for-boss.html') Подарки руководителю
 						li
-							a.nav-custom-link(href='delivery.html') Доставка
+							a.nav-custom-link(href='delivery.html' rel='nofollow') Доставка
 						li
-							a.nav-custom-link(href='pay.html') Оплата
+							a.nav-custom-link(href='pay.html' rel='nofollow') Оплата
 						li
-							a.nav-custom-link(href='contacts.html') Контакты
+							a.nav-custom-link(href='contacts.html' rel='nofollow') Контакты
 		section.content
 			.container
 				.slider
@@ -54,7 +54,7 @@ html
 					.footer-section
 						.col-md-3.col-xs-12
 						.col-md-6.col-xs-12
-							.footer-copyright.text-center Copyright © 2016 "CMN" (Санкт-Петербург)
+							.footer-copyright.text-center Copyright © 2016 "vipgift.su" (Санкт-Петербург)
 						.col-md-3.col-xs-12
 							.footer-contacts
 								span.contacts-info
@@ -64,3 +64,33 @@ html
 		block script
 			script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
 			script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+
+			// Yandex.Metrika counter
+script(type='text/javascript').
+	(function (d, w, c) {
+	(w[c] = w[c] || []).push(function() {
+	try {
+	w.yaCounter37650755 = new Ya.Metrika({
+	id:37650755,
+	clickmap:true,
+	trackLinks:true,
+	accurateTrackBounce:true,
+	webvisor:true
+	});
+	} catch(e) { }
+	});
+	var n = d.getElementsByTagName("script")[0],
+	s = d.createElement("script"),
+	f = function () { n.parentNode.insertBefore(s, n); };
+	s.type = "text/javascript";
+	s.async = true;
+	s.src = "https://mc.yandex.ru/metrika/watch.js";
+	if (w.opera == "[object Opera]") {
+	d.addEventListener("DOMContentLoaded", f, false);
+	} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+noscript
+	div
+		img(src='https://mc.yandex.ru/watch/37650755', style='position:absolute; left:-9999px;', alt='')
+// /Yandex.Metrika counter
+

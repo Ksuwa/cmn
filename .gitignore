@@ -18,6 +18,7 @@ $RECYCLE.BIN/
 *.css.map
 *.css
 
+src/scss/*.css
 node_modules
 dist
 
